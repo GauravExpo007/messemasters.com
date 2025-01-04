@@ -23,16 +23,6 @@ $(document).ready(function () {
         $(this).closest("button").find("i").toggleClass("fa-sort-down fa-sort-up");
     });
 
-    // GAllery Section ****
-    // Initialize Fancybox with custom options
-    $('[data-fancybox="gallery"]').fancybox({
-        infinite: false, // Disable infinite scrolling
-        clickOutside: "close", // Closes the image when clicking outside
-        dragToClose: false, // Disable drag to close
-        image: {
-            zoom: false // Disable image zoom
-        }
-    });
 });
 
 

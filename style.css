@@ -23,7 +23,7 @@ header {
     top: 0;
     right: 0;
     /* height: 110%; */
-    background: #FF6600 url(./images/headerbackground/header-v5-bg.png) no-repeat 0 0;
+    background: #FF6600 no-repeat 0 0;
     color: #fff;
     -webkit-background-size: cover;
     background-size: cover;

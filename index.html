@@ -1,0 +1,1255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- Include Swiper.js CSS and JS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Include Fancybox CSS and JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+</head>
+
+<body>
+    <header class="sticky top-0 z-50">
+        <!-- Top-Bar -->
+        <topbar class=" flex py-4 justify-between px-10 lg:justify-around lg:px-0 items-center bg-black">
+            <div class="navbar-brand">
+                <a href="/"> <img src="./images/M-Masters-Logo.png" alt="logo" width="55" class="logo_image"></a>
+            </div>
+            <button id="hamburger" class="lg:hidden text-white text-2xl focus:outline-none" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fa fa-bars"></i>
+            </button>
+            <div class="hidden lg:flex justify-around items-center">
+                <div class="px-4">
+                    <address class="flex gap-5">
+                        <div class="hover:text-[#FF6600]">
+                            <i class="fa fa-envelope "></i>
+                            <a href="mailto:info@expostandservice.us" target="_blank" rel="noopener noreferrer">
+                                <email>
+                                    enquiry@messemasters.com
+
+                                </email>
+                            </a>
+                        </div>
+                        <div class="hover:text-[#FF6600]">
+                            <i class="fa fa-phone"></i>
+                            <a href="tel:+491725636927
+                            " target="_blank" rel="noopener noreferrer">
+                                <phone>
+                                    <bold>+49 172 5636927
+                                    </bold>
+                                </phone>
+                            </a>
+                        </div>
+                    </address>
+                </div>
+                <div class="px-4">
+                    <ul class="flex gap-3">
+                        <li class=" hover:scale-105 transition-all duration-300">
+                            <a href="/rent-booth-by-size" target="_blank"
+                                class="relative text-white border-white hover:bg-[#FF6600] hover:border-[#FF6600] rounded-full border-2 font-semibold transition-all duration-500  shadow px-3 py-2 text-sm overflow-hidden">
+
+                                Rent By Size
+
+                                <span
+                                    class="absolute inset-0 bg-[#FB6C24] left-0 transition-all duration-300 transform scale-x-0 group-hover:scale-x-100 origin-left"></span>
+                            </a>
+                        </li>
+                        <li class=" hover:scale-105 transition-all duration-300">
+                            <a href="/exhibit_search"
+                                class="relative text-white border-white hover:bg-[#FF6600] hover:border-[#FF6600] rounded-full border-2 font-semibold transition-all duration-500  shadow px-3 py-2 text-sm overflow-hidden">
+
+                                Get A Quote
+
+                                <span
+                                    class="absolute inset-0 bg-[#FB6C24] left-0 transition-all duration-300 transform scale-x-0 group-hover:scale-x-100 origin-left"></span>
+                            </a>
+                        </li>
+                        <li class=" hover:scale-105 transition-all duration-300">
+                            <a href="/exhibit_search"
+                                class="relative text-white border-white hover:bg-[#FF6600] hover:border-[#FF6600] rounded-full border-2 font-semibold transition-all duration-500  shadow px-3 py-2 text-sm overflow-hidden">
+
+                                Download Brochure
+
+                                <span
+                                    class="absolute inset-0 bg-[#FB6C24] left-0 transition-all duration-300 transform scale-x-0 group-hover:scale-x-100 origin-left"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </topbar>
+
+        <!-- Bottom-Bar -->
+        <bottombar>
+            <div class="px-[6%]">
+                <nav class="navbar">
+                    <ul class="navbar-nav text-lg">
+
+                        <li class="nav-item">
+                            <a href="/" class=" text-black lg:text-white">Home
+                            </a>
+
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="/company-profile" class=" text-black lg:text-white">Company Profile
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/portfolio" class=" text-black lg:text-white">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            Services <i class="fa fa-sort-down"></i>
+
+                            <ul class="dropdown">
+
+                                <li class="nav-item">
+                                    <a href="/custom-stand" class="nav-link"> Custom Exebution
+                                        Stand
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="/country-pavilion-stand" class="nav-link"> Country Pavilion
+                                        Stand </i></a>
+
+                                </li>
+                                <li class="nav-item">
+                                    <a href="/modular-bematrix-stand" class="nav-link"> Modular Exebution
+                                        Stands Design </i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            Content Hub <i class="fa fa-sort-down"></i>
+                            <ul class="dropdown">
+                                <li class="nav-item">
+                                    <a href="/blog" class="nav-link">Blog </a>
+
+                                </li>
+                                <li class="nav-item">
+                                    <a href="/global-presence" class="nav-link">Global Presence</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="/major-exhibiting-cities" class="nav-link">Major Exhibition Cities</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="/exhibition-stand-design" class="nav-link">Exehibition Stand Design</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="/exhibition-stand-builders" class="nav-link">Exehibition Stand Builder</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="/exhibition-stand-contractor" class="nav-link">Exehibition Stand
+                                        Contractor</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="/rent-booth-by-size" class="nav-link">Rent Booth By Size</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/trade-show-calender" class=" text-black lg:text-white">Trade Show Calendar
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/get-in-touch" class=" text-black lg:text-white">Get In Touch
+                            </a>
+                        </li>
+                    </ul>
+
+                </nav>
+            </div>
+        </bottombar>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu"
+            class="hidden lg:hidden bg-black text-white p-4 rounded-md h-screen border-t-2 border-[#FF6600]">
+            <ul class="flex flex-col gap-4">
+                <li><a href="/" class="hover:underline">Home</a></li>
+                <li><a href="#" class="hover:underline">Company Profile</a></li>
+                <li><a href="/portfolio" class="hover:underline">Portfolio</a></li>
+                <li>
+                    <button class="flex justify-between w-full items-center hover:underline dropdown-toggle"
+                        id="services-toggle">
+                        Services <i class="fa fa-sort-down text-white"></i>
+                    </button>
+                    <ul class="hidden dropdown mt-2 ml-4" id="services-dropdown">
+                        <li><a href="#" class="block py-2 hover:underline">Custom Execution Stand</a></li>
+                        <li><a href="#" class="block py-2 hover:underline">Country Pavilion Stand</a></li>
+                        <li><a href="#" class="block py-2 hover:underline">Modular Stands Design</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <button class="flex justify-between w-full items-center hover:underline dropdown-toggle"
+                        id="content-hub-toggle">
+                        Content Hub <i class="fa fa-sort-down text-white"></i>
+                    </button>
+                    <ul class="hidden dropdown mt-2 ml-4" id="content-hub-dropdown">
+                        <li class="nav-item"><a href="#" class="block py-2 hover:underline">Blog</a></li>
+                        <li class="nav-item"><a href="#" class="block py-2 hover:underline">Global Presence</a></li>
+                        <li class="nav-item"><a href="#" class="block py-2 hover:underline">Major Exhibition Cities</a>
+                        </li>
+                        <li class="nav-item"><a href="#" class="block py-2 hover:underline">Exhibition Stand Design</a>
+                        </li>
+                        <li class="nav-item"><a href="#" class="block py-2 hover:underline">Exhibition Stand Builder</a>
+                        </li>
+                        <li class="nav-item"><a href="#" class="block py-2 hover:underline">Exhibition Stand
+                                Contractor</a></li>
+                        <li class="nav-item"><a href="#" class="block py-2 hover:underline">Rent Booth By Size</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" class="hover:underline">Trade Show Calendar</a></li>
+                <li><a href="#" class="hover:underline">Get In Touch</a></li>
+            </ul>
+        </div>
+
+
+
+    </header>
+
+    <!-- Banner-Section -->
+    <section>
+        <div class="relative w-full h-[500px]">
+            <video class="w-full h-full object-cover" autoplay muted loop>
+                <source src="./assets/banner-video/header-video.webm" type="video/mp4" class="w-full">
+                Your browser does not support the video tag.
+            </video>
+            <div
+                class="absolute inset-0 flex flex-col items-center justify-center text-white text-2xl font-bold  bg-orange-600/30">
+                <h1 class="lg:text-4xl text-lg font-bold text-center w-[80%]">Trusted Exhibition Stand Builder & Booth
+                    Design
+                    Company in Europe</h1>
+                <summary class="block mt-4 lg:text-lg text-sm text-white text-center w-[80%]">
+                    Messe Masters is a leading exhibition stand builder in Europe with manufacturing centres in Germany,
+                    <br class="hidden lg:block" />
+                    Netherlands, Italy, Spain, France, Switzerland. We assist our customers to create a successful
+                    exhibit with customized stands for over 15 years.
+                </summary>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- About-Us Section -->
+    <section class=" bg-black text-white p-5 md:p-10 lg:p-20">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 items-start">
+            <div class="p-3 md:p-5">
+                <hr class="w-[100%] md:w-1/3 h-1 bg-[#FF6600]">
+                <h2 class="text-2xl md:text-3xl lg:text-4xl font-semibold  mb-3">Find the Best Exhibition Stand Builder
+                    in Europe</h2>
+                <p class="text-justify text-gray-200">
+                    Messe Masters is a reliable exhibition stand builder in Europe that offers a range of exhibiting
+                    services to exhibitors. We have pushed the limits of creativity to offer exhibiting stands
+                    (including custom stands, modular stands, double-storey stands, country pavilions, and others) for
+                    over 15+ years with the latest technologies that allow them to express themselves. We are exhibition
+                    stand manufacturers in Europe with comprehensive stand construction services.
+                    <br />
+                    <br />
+                    We help our clients achieve their exhibiting objectives through exciting designs and excellent
+                    expertise gained in the industry over the years. Designing and manufacturing stands allow us to get
+                    the best return on your investment. As among the trusted exhibition stand builder and contractors in
+                    Europe, we handle all aspects of construction, including inspection, Installation, dismantling, and
+                    design. Our easy-to-use gallery helps you navigate through a variety of design ideas.
+                </p>
+
+                <a href="/company-profile"
+                    class="relative inline-flex items-center justify-start px-6 py-2 mt-5 overflow-hidden font-medium transition-all bg-[#FF6600] rounded-lg group">
+                    <span
+                        class="absolute top-0 right-0 inline-block w-4 h-4 transition-all duration-500 ease-in-out bg-[#eaeaea] rounded group-hover:-mr-4 group-hover:-mt-4">
+                        <span
+                            class="absolute top-0 right-0 w-5 h-5 rotate-45 translate-x-1/2 -translate-y-1/2 bg-white"></span>
+                    </span>
+                    <span
+                        class="absolute bottom-0 left-0 w-full h-full transition-all duration-500 ease-in-out delay-200 -translate-x-full translate-y-full bg-white rounded-2xl group-hover:mb-12 group-hover:translate-x-0"></span>
+                    <span
+                        class="relative w-full text-left font-semibold text-white transition-colors duration-200 ease-in-out group-hover:text-[#FF6600]">More
+                        About Us</span>
+                </a>
+            </div>
+
+            <div class="flex justify-center wow " data-wow-duration="1500ms">
+
+                <img src="./images/about-us/540x500-px.webp" alt="about-us" class="w-[900%] h-[100%]" />
+            </div>
+
+    </section>
+
+    <!-- Country-Section -->
+    <section class="px-5 md:px-10 ">
+        <div>
+
+            <h2 class="text-center text-2xl md:text-3xl lg:text-4xl font-semibold text-[#FB6C24] py-5 pt-10 lg:pt-20">
+                Global Presence To Serve The Exhibitors With The Best
+            </h2>
+            <p class="text-base md:text-lg text-center w-[90%] mx-auto">
+                Messe Masters is an<span class="font-bold"> exhibition stand builder in Europe</span>
+                (Germany, Netherlands, Italy, Spain, France, Switzerland)
+                that has been serving in the exhibition stand construction industry since 2008.
+            </p>
+
+        </div>
+
+        <div>
+
+            <div
+                class=" grid grid-cols-1 md:grid-cols-3 xl:grid-cols-6 gap-4  justify-center overflow-hidden py-6 sm:py-10 rounded-2xl">
+                <a href="/stand-design-and-builder-company-in-germany">
+                    <div
+                        class="group relative cursor-pointer overflow-hidden bg-white  shadow-xl ring-1 ring-gray-900/5  transition-all duration-500 hover:-translate-y-1 hover:shadow-2xl  sm:max-w-[20rem] sm:rounded-lg ">
+                        <span
+                            class="md:absolute md:top-10 z-0 h-20 w-20 rounded-full bg-[#FB6C24] transition-all duration-300 group-hover:scale-[10]"></span>
+                        <div
+                            class="relative z-10 mx-auto max-w-md group-hover:flex group-hover:justify-center group-hover:items-center ">
+                            <span
+                                class="grid h-20 w-20 place-items-center rounded-full bg-[#FB6C24] transition-all duration-300 group-hover:bg-gray-100 group-hover:backdrop-blur-sm group-hover:bg-white/30  group-hover:w-full group-hover:h-full group-hover:rounded-[10px] group-hover:text-[#FB6C24 ] absolute text-white font-semibold transition-all duration-500">
+                                GERMANY
+
+                            </span>
+                            <div
+                                class="space-y-6 text-base leading-7 text-gray-600 transition-all duration-500 group-hover:text-white/90">
+                                <img src="./images/country/Germany.webp" alt="GERMANY"
+                                    class="rounded-xl xl:h-[130px] w-full md:h-[150px]">
+                            </div>
+
+                        </div>
+
+                    </div>
+                </a>
+
+                <a href="/stand-design-company-in-netherlands">
+                    <div
+                        class="group relative cursor-pointer overflow-hidden bg-white  shadow-xl ring-1 ring-gray-900/5  transition-all duration-500 hover:-translate-y-1 hover:shadow-2xl  sm:max-w-[20rem] sm:rounded-lg ">
+                        <span
+                            class="md:absolute md:top-10 z-0 h-20 w-20 rounded-full bg-[#FB6C24] transition-all duration-300 group-hover:scale-[10]"></span>
+                        <div
+                            class="relative z-10 mx-auto max-w-md group-hover:flex group-hover:justify-center group-hover:items-center ">
+                            <span
+                                class="grid h-20 w-20 place-items-center rounded-full bg-[#FB6C24] transition-all duration-300 group-hover:bg-gray-100 group-hover:backdrop-blur-sm group-hover:bg-white/30  group-hover:w-full group-hover:h-full group-hover:rounded-[10px] group-hover:text-[#FB6C24 ] absolute text-white font-semibold transition-all duration-500">
+                                NETHERLANDS
+                            </span>
+                            <div
+                                class="space-y-6 text-base leading-7 text-gray-600 transition-all duration-500 group-hover:text-white/90">
+                                <img src="./images/country/netherland.webp" alt="NETHERLANDS"
+                                    class="rounded-xl xl:h-[130px] w-full md:h-[150px]">
+                            </div>
+
+                        </div>
+
+                    </div>
+                </a>
+
+                <a href="/exhibition-stand-builders-italy">
+                    <div
+                        class="group relative cursor-pointer overflow-hidden bg-white  shadow-xl ring-1 ring-gray-900/5  transition-all duration-500 hover:-translate-y-1 hover:shadow-2xl  sm:max-w-[20rem] sm:rounded-lg ">
+                        <span
+                            class="md:absolute md:top-10 z-0 h-20 w-20 rounded-full bg-[#FB6C24] transition-all duration-300 group-hover:scale-[10]"></span>
+                        <div
+                            class="relative z-10 mx-auto max-w-md group-hover:flex group-hover:justify-center group-hover:items-center ">
+                            <span
+                                class="grid h-20 w-20 place-items-center rounded-full bg-[#FB6C24] transition-all duration-300 group-hover:bg-gray-100 group-hover:backdrop-blur-sm group-hover:bg-white/30  group-hover:w-full group-hover:h-full group-hover:rounded-[10px] group-hover:text-[#FB6C24 ] absolute text-white font-semibold transition-all duration-500">
+                                ITALY
+                            </span>
+                            <div
+                                class="space-y-6 text-base leading-7 text-gray-600 transition-all duration-500 group-hover:text-white/90">
+                                <img src="./images/country/Italy.webp" alt="ITALY"
+                                    class="rounded-xl xl:h-[130px] w-full md:h-[150px]">
+                            </div>
+
+                        </div>
+
+                    </div>
+                </a>
+
+                <a href="/exhibition-stand-builder-spain">
+                    <div
+                        class="group relative cursor-pointer overflow-hidden bg-white  shadow-xl ring-1 ring-gray-900/5  transition-all duration-500 hover:-translate-y-1 hover:shadow-2xl  sm:max-w-[20rem] sm:rounded-lg ">
+                        <span
+                            class="md:absolute md:top-10 z-0 h-20 w-20 rounded-full bg-[#FB6C24] transition-all duration-300 group-hover:scale-[10]"></span>
+                        <div
+                            class="relative z-10 mx-auto max-w-md group-hover:flex group-hover:justify-center group-hover:items-center ">
+                            <span
+                                class="grid h-20 w-20 place-items-center rounded-full bg-[#FB6C24] transition-all duration-300 group-hover:bg-gray-100 group-hover:backdrop-blur-sm group-hover:bg-white/30  group-hover:w-full group-hover:h-full group-hover:rounded-[10px] group-hover:text-[#FB6C24 ] absolute text-white font-semibold transition-all duration-500">
+                                SPAIN
+                            </span>
+                            <div
+                                class="space-y-6 text-base leading-7 text-gray-600 transition-all duration-500 group-hover:text-white/90">
+                                <img src="./images/country/Spain.webp" alt="SPAIN"
+                                    class="rounded-xl xl:h-[130px] w-full md:h-[150px]">
+                            </div>
+
+                        </div>
+
+                    </div>
+                </a>
+
+                <a href="/exhibition-stand-builder-in-france">
+                    <div
+                        class="group relative cursor-pointer overflow-hidden bg-white  shadow-xl ring-1 ring-gray-900/5  transition-all duration-500 hover:-translate-y-1 hover:shadow-2xl  sm:max-w-[20rem] sm:rounded-lg ">
+                        <span
+                            class="md:absolute md:top-10 z-0 h-20 w-20 rounded-full bg-[#FB6C24] transition-all duration-300 group-hover:scale-[10]"></span>
+                        <div
+                            class="relative z-10 mx-auto max-w-md group-hover:flex group-hover:justify-center group-hover:items-center ">
+                            <span
+                                class="grid h-20 w-20 place-items-center rounded-full bg-[#FB6C24] transition-all duration-300 group-hover:bg-gray-100 group-hover:backdrop-blur-sm group-hover:bg-white/30  group-hover:w-full group-hover:h-full group-hover:rounded-[10px] group-hover:text-[#FB6C24 ] absolute text-white font-semibold transition-all duration-500">
+                                FRANCE
+                            </span>
+                            <div
+                                class="space-y-6 text-base leading-7 text-gray-600 transition-all duration-500 group-hover:text-white/90">
+                                <img src="./images/country/france.webp" alt="FRANCE"
+                                    class="rounded-xl xl:h-[130px] w-full md:h-[150px]">
+                            </div>
+
+                        </div>
+
+                    </div>
+                </a>
+
+                <a href="/exhibition-stand-builder-switzerland">
+                    <div
+                        class="group relative cursor-pointer overflow-hidden bg-white  shadow-xl ring-1 ring-gray-900/5  transition-all duration-500 hover:-translate-y-1 hover:shadow-2xl  sm:max-w-[20rem] sm:rounded-lg ">
+                        <span
+                            class="md:absolute md:top-10 z-0 h-20 w-20 rounded-full bg-[#FB6C24] transition-all duration-300 group-hover:scale-[10]"></span>
+                        <div
+                            class="relative z-10 mx-auto max-w-md group-hover:flex group-hover:justify-center group-hover:items-center ">
+                            <span
+                                class="grid h-20 w-20 place-items-center rounded-full bg-[#FB6C24] transition-all duration-300 group-hover:bg-gray-100 group-hover:backdrop-blur-sm group-hover:bg-white/30  group-hover:w-full group-hover:h-full group-hover:rounded-[10px] group-hover:text-[#FB6C24 ] absolute text-white font-semibold transition-all duration-500">
+                                SWITZERLAND
+                            </span>
+                            <div
+                                class="space-y-6 text-base leading-7 text-gray-600 transition-all duration-500 group-hover:text-white/90">
+                                <img src="./images/country/Switzerland.webp" alt="Switzerland"
+                                    class="rounded-xl xl:h-[130px] w-full md:h-[150px] ">
+                            </div>
+
+                        </div>
+
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Exebution-Stand Section -->
+    <section class="p-5 md:p-10 bg-[#FDF1F1]">
+        <div>
+            <h2 class="text-center text-2xl md:text-3xl lg:text-4xl font-semibold text-[#FB6C24] py-5 lg:pt-10">
+                Customising exhibition stands as per your needs
+            </h2>
+            <p class="text-base md:text-lg text-center w-[90%] mx-auto">
+                We understand that each brand is unique so we offer a wide variety of exhibition stands, you can search
+                and discover the right type for your exhibition goals.
+            </p>
+        </div>
+
+        <div class="md:flex inline-block relative mx-auto my-0 pt-4 px-0 max-w-6xl text-center">
+            <figure
+                class="group relative overflow-hidden m-4 max-w-sm bg-gradient-to-r from-pink-400 to-blue-500 text-center rounded-3xl border border-[#FF6600] transform transition duration-300">
+
+                <!-- Image Section -->
+                <img src="./images/exebition-stand/Custom-Stand-min.webp" alt="img15"
+                    class="relative block min-h-full opacity-80 w-[120%] transition-all duration-500 ease-in-out group-hover:opacity-70 group-hover:scale-110 object-cover rounded-2xl" />
+
+                <!-- Caption with Header and Paragraph -->
+                <figcaption
+                    class="absolute inset-0 pt-20 text-white group-hover:bg-black group-hover:bg-opacity-70  uppercase text-base md:text-lg group-hover:opacity-100 group-hover:translate-y-0 transform transition-all duration-300 ease-in-out">
+                    <div
+                        class="group-hover:border-y-2 group-hover:border-white border-transparent p-4 py-10 rounded-2xl">
+                        <h2 class="text-white text-xl md:text-2xl mb-4">Custom Exhibition Stand</h2>
+                        <a href="#"
+                            class="opacity-0 group-hover:opacity-100 border-2 rounded-xl p-1 px-3 text-base transition-opacity duration-300 ease-in-out">
+                            Know More
+                        </a>
+                    </div>
+                </figcaption>
+            </figure>
+
+            <figure
+                class="group relative overflow-hidden mx-4 my-4 max-w-sm bg-gradient-to-r from-pink-400 to-blue-500 text-center rounded-3xl border border-[#FF6600] transform transition duration-300">
+
+                <!-- Image Section -->
+                <img src="./images/exebition-stand/Country-Pavillion-min.webp" alt="booth-5"
+                    class="relative block min-h-full max-w-full opacity-80 w-[120%] transition-all duration-500 ease-in-out group-hover:opacity-70 group-hover:scale-110 object-cover rounded-2xl" />
+
+                <!-- Caption with Header and Paragraph -->
+                <figcaption
+                    class="absolute inset-0 pt-20 text-white group-hover:bg-black group-hover:bg-opacity-70  uppercase text-base md:text-lg group-hover:opacity-100 group-hover:translate-y-0 transform transition-all duration-300 ease-in-out">
+                    <div
+                        class="group-hover:border-y-2 group-hover:border-white border-transparent p-4 py-10 rounded-2xl">
+                        <h2 class="text-white text-xl md:text-2xl mb-4">Country Pavilion Stand</h2>
+                        <a href="#"
+                            class="opacity-0 group-hover:opacity-100 border-2 rounded-xl p-1 px-3 text-base transition-opacity duration-300 ease-in-out">
+                            Know More
+                        </a>
+                    </div>
+                </figcaption>
+            </figure>
+
+            <figure
+                class="group relative overflow-hidden mx-4 my-4 max-w-sm bg-gradient-to-r from-pink-400 to-blue-500 text-center rounded-3xl border border-[#FF6600] transform transition duration-300">
+
+                <!-- Image Section -->
+                <img src="./images/exebition-stand/BeMatrix-Stand-min.webp" alt="booth-5"
+                    class="relative block min-h-full max-w-full opacity-80 w-[120%] transition-all duration-500 ease-in-out group-hover:opacity-70 group-hover:scale-110 object-cover rounded-2xl" />
+
+                <!-- Caption with Header and Paragraph -->
+                <figcaption
+                    class="absolute inset-0 pt-20 text-white group-hover:bg-black group-hover:bg-opacity-70 uppercase text-base md:text-lg group-hover:opacity-100 group-hover:translate-y-0 transform transition-all duration-300 ease-in-out">
+                    <div
+                        class="group-hover:border-y-2 group-hover:border-white border-transparent p-4 py-10 rounded-2xl">
+                        <h2 class="text-white text-xl md:text-2xl mb-4">Modular/BeMatrix Stand</h2>
+                        <a href="#"
+                            class="opacity-0 group-hover:opacity-100 border-2 rounded-xl p-1 px-3 text-base transition-opacity duration-300 ease-in-out">
+                            Know More
+                        </a>
+                    </div>
+                </figcaption>
+            </figure>
+        </div>
+
+    </section>
+
+    <!-- Process Section -->
+    <section class="bg-fixed" style="background-image: url('/images/process/1360x690-px.webp')">
+        <div class="flex flex-col w-full lg:w-[60%] bg-black text-white bg-opacity-40 p-5 gap-5 pb-10 lg:pb-20">
+            <h3 class="text-2xl md:text-3xl lg:text-4xl lg:pt-10  ">
+                Messe Masters's process of exhibition stand design and construction company in Europe
+            </h3>
+            <p>
+                At Messe Masters, we follow a simple approach to demonstrate and create an exhibition stand with the
+                following steps:
+            </p>
+            <div>
+                <ul class=" list-inside flex flex-col gap-5">
+                    <li
+                        class="bg-[#FF6600] bg-opacity-75 p-3 flex flex-col md:flex-row text-center md:text-start items-center">
+                        <img src="./images/icons/Brief-form@72x-100.webp" alt="img1"
+                            class="inline-block mr-3 w-20 p-2" />
+                        <div class="flex flex-col gap-2">
+                            <h4 class="text-xl md:text-2xl font-semibold">Brief form</h4>
+                            <p>
+                                We communicate with customers and collect information from them for research purposes.
+                            </p>
+                        </div>
+                    </li>
+                    <li
+                        class="bg-[#FF6600] bg-opacity-75 p-3 flex flex-col md:flex-row text-center md:text-start items-center">
+                        <img src="./images/icons/Creative-options@72x-100.webp" alt="img1"
+                            class="inline-block mr-3 w-20 p-2" />
+                        <div class="flex flex-col gap-2">
+                            <h4 class="text-xl md:text-2xl font-semibold">
+                                Creative options</h4>
+                            <p>
+                                We create a wide range of 3D models as per your requirements.
+                            </p>
+                        </div>
+                    </li>
+                    <li
+                        class="bg-[#FF6600] bg-opacity-75 p-3 flex flex-col md:flex-row text-center md:text-start items-center">
+                        <img src="./images/icons/Customer-reviews@72x-100.webp" alt="img1"
+                            class="inline-block mr-3 w-20 p-2" />
+                        <div class="flex flex-col gap-2">
+                            <h4 class="text-xl md:text-2xl font-semibold">
+                                Customer reviews</h4>
+                            <p>
+                                We involve our customers throughout the process, solicit ideas and develop the design to
+                                create a 3D concept that defines the stand.
+                            </p>
+                        </div>
+                    </li>
+                    <li
+                        class="bg-[#FF6600] bg-opacity-75 p-3 flex flex-col md:flex-row text-center md:text-start items-center">
+                        <img src="./images/icons/In-House-Production@72x-100.webp" alt="img1"
+                            class="inline-block mr-3 w-20 p-2" />
+                        <div class="flex flex-col gap-2">
+                            <h4 class="text-xl md:text-2xl font-semibold">In-house production </h4>
+                            <p>
+                                After the final approval of the 3D design, we start production in our factory and take
+                                full responsibility.
+                            </p>
+                        </div>
+                    </li>
+                    <li
+                        class="bg-[#FF6600] bg-opacity-75 p-3 flex flex-col md:flex-row text-center md:text-start items-center">
+                        <img src="./images/icons/On-site-supervision@72x-100.webp" alt="img1"
+                            class="inline-block mr-3 w-20 p-2" />
+                        <div class="flex flex-col gap-2">
+                            <h4 class="text-xl md:text-2xl font-semibold">On-site supervision </h4>
+                            <p>
+                                The Project Manager will manage all contingencies to create a unique experience on-site.
+                            </p>
+                        </div>
+                    </li>
+                    <li
+                        class="bg-[#FF6600] bg-opacity-75 p-3 flex flex-col md:flex-row text-center md:text-start items-center">
+                        <img src="./images/icons/Installation-dismantling-and-storage@72x-100.webp" alt="img1"
+                            class="inline-block mr-3 w-20 p-2" />
+                        <div class="flex flex-col gap-2">
+                            <h4 class="text-xl md:text-2xl font-semibold">Installation, dismantling, and storage </h4>
+                            <p>
+                                Our team of experts will set up the stand on site, dismantle it after the show, and
+                                store it for future use if necessary.
+                            </p>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery-Section -->
+    <section class="bg-[#FDF1F1]">
+        <div class="flex flex-col gap-5 md:gap-10 mx-5 md:mx-10 md:py-10 bg-no-repeat bg-center">
+            <h2 class="text-center text-2xl md:text-3xl lg:text-4xl font-semibold text-[#FB6C24] py-5 lg:pt-10">
+                Our Work Portfolio
+            </h2>
+
+            <!-- Image Gallery Grid -->
+            <section class="grid grid-cols-2 gap-1 lg:gap-2 w-full pb-5 md:pb-10">
+                <!-- First Column -->
+                <div class="grid grid-cols-1 gap-1 lg:gap-2">
+                    <div class="grid grid-cols-2 gap-1 lg:gap-2">
+                        <a href="./images/Gallery/1.webp" data-fancybox="gallery" data-caption="Booth 1">
+                            <img src="./images/Gallery/1.webp" alt="Booth 1" />
+                        </a>
+                        <a href="./images/Gallery/2.webp" data-fancybox="gallery" data-caption="Booth 2">
+                            <img src="./images/Gallery/2.webp" alt="Booth 2" />
+                        </a>
+                    </div>
+                    <a href="./images/Gallery/3.webp" data-fancybox="gallery" data-caption="Booth 3">
+                        <img src="./images/Gallery/3.webp" alt="Booth 3" />
+                    </a>
+                </div>
+
+                <!-- Second Column -->
+                <div class="grid grid-cols-1 gap-1 lg:gap-2">
+                    <a href="./images/Gallery/4.webp" data-fancybox="gallery" data-caption="Booth 4">
+                        <img src="./images/Gallery/4.webp" alt="Booth 4" />
+                    </a>
+                    <div class="grid grid-cols-2 gap-1 lg:gap-2">
+                        <a href="./images/Gallery/5.webp" data-fancybox="gallery" data-caption="Booth 5">
+                            <img src="./images/Gallery/5.webp" alt="Booth 5" />
+                        </a>
+                        <a href="./images/Gallery/6.webp" data-fancybox="gallery" data-caption="Booth 6">
+                            <img src="./images/Gallery/6.webp" alt="Booth 6" />
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <!-- Why-Choose-Us-Section -->
+    <section class="bg-black">
+        <div class="flex flex-col w-full lg:w-[90%] mx-auto bg-black text-white bg-opacity-40 p-5 gap-5 py-10 lg:pb-20">
+            <h3 class="text-2xl md:text-3xl lg:text-4xl lg:pt-10 text-center font-semibold">
+                Why choose Messe Masters as your exhibition stand builder in Europe
+            </h3>
+            <p class="text-justify">
+                Messe Masters is a trusted and reliable company of dedicated professionals who work closely with clients
+                to understand their specific needs and ensure each stand reflects their vision. From concept to
+                implementation, we prioritize quality and excellence and deliver exceptional results that exceed
+                expectations. Our designing and printing team will make every effort to ensure your stand is built and
+                inspected with the best materials. Therefore, we’re a top <a href="/exhibition-stand-builders"
+                    target="_blank" class="text-[#FF6600] font-bold">exhibition
+                    stand builder</a> in Germany that makes
+                a distinction in the industry through:
+            </p>
+            <div class="py-5">
+                <ul class=" list-inside flex flex-col gap-5">
+                    <li class="  p-3 flex flex-col md:flex-row text-center md:text-start items-center">
+                        <img src="./images/why-choose-us/Offering-exceptional-feasible-exhibition-answers@72x-1.png"
+                            alt="img1" class="inline-block mr-3 w-20 p-1" />
+                        <div class="flex flex-col gap-2">
+                            <h4 class="text-xl md:text-2xl font-semibold">Offering exceptional feasible exhibition
+                                answers</h4>
+                            <p>
+                                We provide particular answers for all of your displays with a focus on our customers`
+                                desires; we help them with exceptional exhibition answers.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="  p-3 flex flex-col md:flex-row text-center md:text-start items-center">
+                        <img src="./images/why-choose-us/Wide-Global-Presence@72x-1.png" alt="img2"
+                            class="inline-block mr-3 w-20 p-1" />
+                        <div class="flex flex-col gap-2">
+                            <h4 class="text-xl md:text-2xl font-semibold">
+                                Global Presence</h4>
+                            <p>
+                                Our neighborhood presence as an exhibition Stand Design Company in Germany also lets us
+                                help exhibitors internationally.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="  p-3 flex flex-col md:flex-row text-center md:text-start items-center">
+                        <img src="./images/why-choose-us/End-to-stop-Service-control@72x-1.png" alt="img3"
+                            class="inline-block mr-3 w-20 p-1" />
+                        <div class="flex flex-col gap-2">
+                            <h4 class="text-xl md:text-2xl font-semibold">
+                                End-to-end services</h4>
+                            <p>
+                                As a long-time exhibition stand construction company , we cope with each element of
+                                stand creation, which includes its layout and dismantlement.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="  p-3 flex flex-col md:flex-row text-center md:text-start items-center">
+                        <img src="./images/why-choose-us/Years-of-Experience@72x-1.png" alt="img1"
+                            class="inline-block mr-3 w-20 p-1" />
+                        <div class="flex flex-col gap-2">
+                            <h4 class="text-xl md:text-2xl font-semibold">Years of Experience </h4>
+                            <p>
+                                Our organization has been constructing exhibition stands for years, and we’re one of the
+                                most authentic exhibition stand builder in Europe.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="  p-3 flex flex-col md:flex-row text-center md:text-start items-center">
+                        <img src="./images/why-choose-us/Clients-comments-and-response@72x-1.png" alt="img1"
+                            class="inline-block mr-3 w-20 p-1" />
+                        <div class="flex flex-col gap-2">
+                            <h4 class="text-xl md:text-2xl font-semibold">Client's feedback</h4>
+                            <p>
+                                We maintain our customers on the pinnacle of our precedence list, so we recognize
+                                customers` comments. With our first-class exhibitor offerings, we guarantee them a short
+                                response.
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <p class="text-justify">
+                Messe Masters is an <a href="/stand-design-and-builder-company-in-germany" target="_blank"
+                    class="text-[#FF6600] font-bold">exhibition stand design company in Germany</a> that helps
+                exhibitors achieve
+                outstanding
+                results thanks to our architecture. Some of our successes include increasing our customer traffic by 50%
+                and gaining valuable partnerships through our unique and powerful stands. We are skilled exhibition
+                stand manufacturers in Europe who’re acquainted with all of the necessary qualities for displaying in
+                Europe, and collaborating with us will allow you to have a smooth display in Europe. As the pinnacle
+                exhibition stand contractor company in Europe, we’re committed to effectively accomplishing our
+                customers` marketplace goals through designing appealing and attractive exhibition stand design and
+                contractor in Germany and around Europe. There are diverse motives that make us a prominent
+                organization. Being one of the most skilled exhibition stand design companies in Europe, we have a
+                specialized warehouse facility that permits us to create brilliant exhibition stands.
+            </p>
+        </div>
+    </section>
+
+    <!-- Testimonial-Section -->
+    <section>
+        <div class="flex flex-col w-full lg:w-[90%] mx-auto p-5 gap-5 py-10 lg:pb-20">
+            <h3 class="text-2xl md:text-3xl lg:text-4xl lg:pt-10 text-center font-semibold text-[#FB6C24]">
+                What our clients say about us and our work!
+            </h3>
+            <p class="text-center lg:w-[60%] mx-auto text-lg">
+                We had the opportunity to work with some of Europe’s leading brands.
+                See what our customers say about our services and results.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+                <!-- card-1 -->
+                <card class="flex flex-col gap-5 p-5 rounded-3xl justify-center items-center bg-[#F5F1F1] ">
+                    <p class="text-center text-lg">
+                        Thank you for the excellent work you developed and executed for us. I enjoyed myself. I was
+                        looking for a supplier in Germany, Europe to work on a show. Your team followed everything
+                        perfectly, and the result was appreciated.
+                    </p>
+                    <div class="flex items-center gap-5">
+                        <img src="./images/testimonials/GENOSS-min.png" alt="client-1"
+                            class="w-16 h-16 border border-black rounded-full">
+                        <span>
+                            <b>Genoss</b>
+                            <br />
+                            USA
+                        </span>
+                    </div>
+
+                </card>
+
+                <!-- card-2 -->
+                <card class="flex flex-col gap-5 p-5 rounded-3xl justify-center items-center bg-[#F5F1F1] ">
+                    <p class="text-center text-lg">
+                        Messe Masters took up this challenge and offered us a perfect and holistic long-term solution.
+                        Thank you and your team again for all the effort you put into this show - overall, we were happy
+                        with the stand construction and quality.
+                    </p>
+                    <div class="flex items-center gap-5">
+                        <img src="./images/testimonials/IZOVAC-Testimonial-logo.png" alt="client-1"
+                            class="w-16 h-16 border border-black rounded-full">
+                        <span>
+                            <b>
+                                IZOVAC</b>
+                            <br />
+                            Photonics
+                        </span>
+                    </div>
+
+                </card>
+
+                <!-- card-3 -->
+                <card class="flex flex-col gap-5 p-5 rounded-3xl justify-center items-center bg-[#F5F1F1] ">
+                    <p class="text-center text-lg">
+                        We knew we needed something special for our travelling exhibition. Being in the US, I was
+                        worried about jet lag and the language. However, Messe Masters quickly responded, spoke English,
+                        and did a great job organizing the event.
+                    </p>
+                    <div class="flex items-center gap-5">
+                        <img src="./images/testimonials/magic-dark.jpg" alt="client-1"
+                            class="w-16 h-16 border border-black rounded-full">
+                        <span>
+                            <b>
+                                Magic Travels</b>
+                            <br />
+
+                        </span>
+                    </div>
+
+                </card>
+            </div>
+        </div>
+    </section>
+
+    <!-- Knowledge-Guide section -->
+    <section class="p-5 md:p-10 bg-black text-white">
+        <div>
+            <h2 class="text-center text-2xl md:text-3xl lg:text-4xl font-semibold py-5 lg:pt-10">
+                Here is the knowledge guide for a successful exhibit!
+            </h2>
+            <p class="text-base md:text-lg text-center w-[90%] mx-auto">
+                With our over 15 years of experience, we have provided some essential facts, figures, details, and
+                must-know things about the exhibition industry that an exhibitor should know. So, do have a look at our
+                blogs and excel in the exhibiting industry.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-5 relative mx-auto my-0 pt-4 px-0 max-w-6xl text-center">
+            <div class="mx-auto">
+                <figure
+                    class="group relative overflow-hidden m-4 max-w-sm text-center transform transition duration-300">
+
+                    <!-- Image Section 1-->
+                    <img src="./images/Knowledge-Guide/best-exhibit-spot-on-the-display-ground-messemasters-768x508.webp"
+                        alt="img1"
+                        class=" block min-h-full opacity-100 w-[120%] transition-all duration-500 ease-in-out group-hover:opacity-70 group-hover:scale-110 object-cover " />
+                </figure>
+                <div class="text-white my-4 max-w-sm w-[80%] mx-auto">
+                    <p class="text-start"><a href="/blog/category/exhibitions"
+                            class="font-semibold hover:text-[#FF6600] duration-500">Exhibitions</a>
+                        / <span>4 min
+                            read</span></p>
+                    <p class="py-3 text-start">
+                        <a href="/blog/guide-for-having-the-best-exhibit-spot-on-the-display-ground"
+                            class="font-semibold hover:text-[#FF6600] duration-500"> Guide for Having the Best Exhibit
+                            Spot on the
+                            Display Ground!</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="mx-auto">
+                <figure class="group overflow-hidden mx-4 my-4 max-w-sm text-center transform transition duration-300">
+
+                    <!-- Image Section 2-->
+                    <img src="./images/Knowledge-Guide/Pathway-for-a-result-oriented-exhibit-in-Germany-768x508.webp"
+                        alt="booth-2"
+                        class=" block min-h-full max-w-full opacity-100 w-[120%] transition-all duration-500 ease-in-out group-hover:opacity-70 group-hover:scale-110 object-cover" />
+                </figure>
+
+                <div class="text-white my-4 w-[80%] mx-auto">
+                    <p class="text-start"><a href="/blog/category/exhibitions"
+                            class="font-semibold hover:text-[#FF6600] duration-500">Exhibitions</a>
+                        / <span>5 min
+                            read</span></p>
+                    <p class="py-3 text-start">
+                        <a href="/blog/pathway-for-a-result-oriented-exhibit-in-germany"
+                            class="font-semibold hover:text-[#FF6600] duration-500"> Pathway for a result-oriented
+                            Exhibition
+                            stand design in Germany</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="mx-auto">
+                <figure class="group overflow-hidden mx-4 my-4 max-w-sm text-center transform transition duration-300">
+
+                    <!-- Image Section 3-->
+                    <img src="./images/Knowledge-Guide/Messe-Masters-is-a-reliable-exhibition-stand-builders-in-Frankfurt-600-×-400-px.webp"
+                        alt="booth-5"
+                        class=" block min-h-full max-w-full opacity-100 w-[120%] transition-all duration-500 ease-in-out group-hover:opacity-70 group-hover:scale-110 object-cover" />
+                </figure>
+                <div class="text-white my-4 max-w-sm w-[80%] mx-auto">
+                    <p class="text-start"><a href="/blog/category/exhibitions"
+                            class="font-semibold hover:text-[#FF6600] duration-500">Exhibitions</a>
+                        / <span>6 min
+                            read</span></p>
+                    <p class="py-3 text-start">
+                        <a href="/blog/messe-masters-is-a-reliable-exhibition-stand-builder-in-frankfurt"
+                            class="font-semibold hover:text-[#FF6600] duration-500"> Messe Masters is a reliable
+                            exhibition stand
+                            builder in Frankfurt </a>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Brand - Section -->
+    <section class="p-5 md:p-10">
+        <h4 class=" text-xl md:text-2xl lg:text-3xl font-semibold py-5 lg:pt-10 text-[#FB6C24]">
+            Brands we have served!
+        </h4>
+        <div class="grid grid-cols-3 xl:grid-cols-6 gap-5 m-auto">
+            <img src="./images/brands/GENOSS-min.png" alt="img1"
+                class="w-[100%] h-[80%] shadow-lg lg:hover:scale-105 duration-500 shadow-zinc-500">
+            <img src="./images/brands/CN-CEEDS-min.png" alt="img2"
+                class="w-[100%] h-[80%] shadow-lg lg:hover:scale-105 duration-500 shadow-zinc-500">
+            <img src="./images/brands/Airwayz-min.png" alt="img3"
+                class="w-[100%] h-[80%] shadow-lg lg:hover:scale-105 duration-500 shadow-zinc-500">
+            <img src="./images/brands/EASTMAN-min.png" alt="img4"
+                class="w-[100%] h-[80%] shadow-lg lg:hover:scale-105 duration-500 shadow-zinc-500">
+            <img src="./images/brands/YUMA-min.png" alt="img5"
+                class="w-[100%] h-[80%] shadow-lg lg:hover:scale-105 duration-500 shadow-zinc-500">
+            <img src="./images/brands/Farmvale-min.png" alt="img6"
+                class="w-[100%] h-[80%] shadow-lg lg:hover:scale-105 duration-500 shadow-zinc-500">
+
+        </div>
+    </section>
+
+    <!-- Counter - section -->
+    <section>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 p-5 md:px-10 bg-[#FB6C24]">
+            <div
+                class="flex flex-col justify-center text-center shadow-md shadow-black hover:scale-95 duration-500 py-3 backdrop-blur-lg rounded-3xl">
+                <div class="flex justify-center items-center py-3">
+                    <div class="counter text-white text-2xl md:text-3xl lg:text-4xl" data-target="546"></div>
+                    <span class="text-3xl text-white">+</span>
+                </div>
+                <span class="text-lg md:text-xl font-semibold text-white">Exhibitions</span>
+            </div>
+            <div
+                class="flex flex-col justify-center text-center shadow-md shadow-black hover:scale-95 duration-500 py-3 backdrop-blur-lg rounded-3xl">
+
+                <div class="flex justify-center items-center py-3">
+                    <div class="counter text-white text-2xl md:text-3xl lg:text-4xl" data-target="46"></div>
+                    <span class=" text-white text-3xl">+</span>
+                </div>
+                <span class="text-lg md:text-xl font-semibold text-white">Cities</span>
+            </div>
+            <div
+                class="flex flex-col justify-center text-center shadow-md shadow-black hover:scale-95 duration-500 py-3 backdrop-blur-lg rounded-3xl">
+
+                <div class="flex justify-center items-center py-3">
+                    <div class="counter text-white text-2xl md:text-3xl lg:text-4xl" data-target="452"></div>
+                    <span class=" text-3xl text-white">+</span>
+                </div>
+                <span class="text-lg md:text-xl font-semibold text-white">Projects</span>
+            </div>
+
+            <div
+                class="flex flex-col justify-center text-center shadow-md shadow-black hover:scale-95 duration-500 py-3 backdrop-blur-lg rounded-3xl">
+
+                <div class="flex justify-center items-center py-3">
+                    <div class="counter text-white text-2xl md:text-3xl lg:text-4xl" data-target="2556"></div>
+                    <span class=" text-3xl text-white">+</span>
+                </div>
+                <span class="text-lg md:text-xl font-semibold text-white">No. Of Designs</span>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const counters = document.querySelectorAll('.counter');
+
+            counters.forEach(counter => {
+                // Set initial counter value to 0
+                counter.innerText = '0';
+
+                const updateCounter = () => {
+                    // Retrieve the target value from data-target attribute
+                    const target = +counter.getAttribute('data-target');
+                    const current = +counter.innerText;
+
+                    // Calculate increment
+                    const increment = target / 100;
+
+                    // If the current count is below target, increment and update text
+                    if (current < target) {
+                        counter.innerText = `${Math.ceil(current + increment)}`;
+                        setTimeout(updateCounter, 20);
+                    } else {
+                        counter.innerText = target; // Ensure it ends exactly at target
+                    }
+                };
+
+                // Start counting animation
+                updateCounter();
+            });
+        });
+
+    </script>
+    <!-- Counter section - end -->
+
+    <!-- Contact-Us Section -->
+    <section class="flex flex-col md:flex-row gap-10 mx-auto bg-black text-white py-10 px-5 md:px-20">
+
+        <!-- Address-section -->
+        <div class="w-full md:w-1/2 flex flex-col gap-3">
+            <span class="text-[#1FCBA9] text-xl">write to us</span>
+            <h3 class="text-3xl md:text-4xl lg:text-5xl font-bold">
+                CONTACT <span class="text-[#FB6D25]">US.</span>
+            </h3>
+            <p class="text-2xl md:text-3xl lg:text-4xl font-semibold">
+                Wanting a showcase with a lasting impact! <span class="text-[#FB6D25]">Catch-up with us</span>
+            </p>
+            <ul class="flex flex-col gap-5 py-5">
+                <li class="flex gap-3 items-center">
+                    <i class="fa fa-phone text-xl bg-[#FB6D25] rounded-full px-3 py-1.5" aria-hidden="true"></i>
+                    <div>
+                        <a href="tel:+491725636927" class="hover:text-[#FB6D25] text-lg">+49 172 5636927</a>
+                        <p class="text-[#FB6D25] font-semibold">Call Us</p>
+                    </div>
+                </li>
+                <li class="flex gap-3 items-center">
+                    <i class="fa fa-envelope text-xl bg-[#FB6D25] rounded-full px-2.5 py-1.5" aria-hidden="true"></i>
+                    <div>
+                        <a href="mailto:enquiry@messemasters.com" target="_blank" class="hover:text-[#FB6D25] text-lg">
+                            enquiry@messemasters.com
+                        </a>
+                        <p class="text-[#FB6D25] font-semibold">Write Us</p>
+                    </div>
+                </li>
+                <li class="flex gap-3 items-center">
+                    <i class="fa fa-map-marker text-2xl bg-[#FB6D25] rounded-full px-3 py-1" aria-hidden="true"></i>
+                    <div>
+                        Akazienstraße 3A, Berlin, Germany - 10823
+                        <p class="text-[#FB6D25] font-semibold">Visit Us</p>
+                    </div>
+                </li>
+            </ul>
+            <div class="flex gap-2 items-center">
+                <a href="https://www.facebook.com/messemasters/" target="_blank"><i
+                        class="fab fa-facebook-square text-4xl hover:opacity-70 hover:scale-105 duration-500"></i></a>
+                <a href="https://www.linkedin.com/company/messemasters/" target="_blank"><i
+                        class="fab fa-linkedin text-4xl hover:opacity-70 hover:scale-105 duration-500"></i></a>
+                <a href="https://www.instagram.com/messemasters/" target="_blank"><i
+                        class="fab fa-instagram text-4xl hover:opacity-70 hover:scale-105 duration-500"></i></a>
+                <a href="https://x.com/i/flow/login?redirect_after_login=%2Fmessemasters" target="_blank"><i
+                        class="fab fa-x text-2xl hover:opacity-70 hover:scale-105 duration-500 bg-white text-black px-2 rounded-md"></i></a>
+                <a href="https://de.pinterest.com/messemasters/" target="_blank"><i
+                        class="fab fa-pinterest text-2xl hover:opacity-70 hover:scale-105 duration-500 bg-white text-black px-1.5 rounded-md"></i></a>
+                <a href="https://www.tumblr.com/messemasters" target="_blank"><i
+                        class="fab fa-tumblr text-2xl hover:opacity-70 hover:scale-105 duration-500 bg-white text-black px-2.5 rounded-md"></i></a>
+            </div>
+
+        </div>
+
+        <!-- Form-Section -->
+        <div class=" w-full md:w-1/2 text-white p-0 md:p-6 rounded-lg shadow-lg">
+            <form id="contact-form" action="/submit" method="POST" enctype="multipart/form-data">
+                <!-- First Row -->
+                <div class="flex flex-col md:flex-row gap-4">
+                    <div class="w-full">
+                        <div class="relative mt-1">
+                            <span class="absolute inset-y-0 left-0 flex items-center pl-2">
+                                <i class="fa-solid fa-user"></i>
+                            </span>
+                            <input id="name" name="name" type="text" placeholder="Name" required
+                                class="block w-full pl-8 pr-3 py-2 border bg-black text-white border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" />
+                        </div>
+                    </div>
+                    <div class="w-full">
+                        <div class="relative mt-1">
+                            <span class="absolute inset-y-0 left-0 flex items-center pl-2">
+                                <i class="fa-regular fa-envelope"></i>
+                            </span>
+                            <input id="email" name="email" type="email" placeholder="Email" required
+                                class="block w-full pl-8 pr-3 py-2 border bg-black text-white border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" />
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Second Row -->
+                <div class="flex flex-col md:flex-row gap-4 mt-4">
+                    <div class="w-full">
+                        <div class="relative mt-1">
+                            <span class="absolute inset-y-0 left-0 flex items-center pl-2">
+                                <i class="fa-solid fa-phone"></i>
+                            </span>
+                            <input id="phone" name="phone" type="tel" placeholder="Phone Number" required
+                                class="block w-full pl-8 pr-3 py-2 border bg-black text-white border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" />
+                        </div>
+                    </div>
+                    <div class="w-full">
+                        <div class="relative mt-1">
+                            <span class="absolute inset-y-0 left-0 flex items-center pl-2">
+                                <i class="fa-solid fa-building"></i>
+                            </span>
+                            <input id="company" name="company" type="text" placeholder="Company Name" required
+                                class="block w-full pl-8 pr-3 py-2 border bg-black text-white border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" />
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Third Row -->
+                <div class="flex flex-col md:flex-row gap-4 mt-4">
+                    <div class="w-full">
+                        <div class="relative mt-1">
+                            <span class="absolute inset-y-0 left-0 flex items-center pl-2">
+                                <i class="fa-solid fa-gift"></i>
+                            </span>
+                            <input id="execution" name="execution" type="text" placeholder="Exhibition Name" required
+                                class="block w-full pl-8 pr-3 py-2 border bg-black text-white border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" />
+                        </div>
+                    </div>
+                    <div class="w-full">
+                        <div class="relative mt-1">
+                            <span class="absolute inset-y-0 left-0 flex items-center pl-2">
+                                <i class="fa-solid fa-layer-group"></i>
+                            </span>
+
+                            <input id="stand-size" name="stand-size" type="text" placeholder="Stand Size" required
+                                class="block w-full pl-8 pr-3 py-2 border bg-black text-white border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" />
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Browse Button -->
+                <div class="mt-4">
+                    <input id="file" name="file" type="file" accept=".jpg,.jpeg,.png,.pdf"
+                        class="mt-1 block w-full text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:rounded-md file:border-0 file:text-sm file:font-semibold file:bg-[#FB6D25] file:text-white hover:file:bg-[#fc8143]" />
+                </div>
+
+                <!-- Message Section -->
+                <div class="mt-4">
+                    <textarea id="message" name="message" rows="4" required
+                        class="mt-1 p-2 block w-full border bg-black text-white border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                        placeholder="Message..."></textarea>
+                </div>
+
+                <!-- Captcha and Send Button -->
+                <div class="flex flex-col md:flex-row gap-4 mt-4">
+                    <div class="mt-4 w-full flex flex-col gap-2">
+                        <input id="captcha" name="captcha" type="text" placeholder="Please type the character" required
+                            class="block w-full pl-3 pr-3 py-2 border bg-black text-white border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" />
+                        <div id="captcha-text"
+                            class="w-fit bg-white hover:opacity-65 duration-500 text-black text-center py-1.5 px-4 rounded-md text-lg font-semibold">
+                        </div>
+                    </div>
+                    <div class="mt-4 w-full">
+                        <button type="submit" aria-label="Submit form"
+                            class="w-full py-2 px-4 bg-[#FF6600] text-white rounded-md shadow-md hover:bg-[#f78336] focus:ring-2 focus:ring-[#f88234] focus:ring-offset-2">
+                            Send
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer-Section -->
+    <footer class="pt-10 bg-black text-white flex flex-col gap-5">
+        <!-- Main Grid Section -->
+        <div class="p-5 pt-10 md:px-10 lg:px-20 grid grid-cols-1 md:grid-cols-4 gap-5 border-t border-white">
+            <!-- About Section -->
+            <section class="flex flex-col gap-6 items-center text-center md:items-start md:text-left w-fit mx-auto">
+                <div class="company-brand">
+                    <a href="/"> <img src="./images/M-Masters-Logo.png" alt="logo" width="120" class="logo_image"></a>
+                </div>
+                <p class="text-slate-200 text-justify">Messe Masters is one of the most trusted <a href="/"
+                        class="font-bold hover:text-zinc-400">exhibition stand builders in Europe</a>
+                    (Germany , Netherlands, France, Italy, Spain, Switzerland). Over the last 15 years, we have
+                    presented various exhibition stand designs in Europe. Whether you’re a first-time exhibitor or a
+                    regular, you know the value of exhibiting to a brand.</p>
+
+            </section>
+
+            <!-- Quick Links Section -->
+            <section class="flex flex-col gap-6 items-center md:items-start w-fit mx-auto">
+                <h2 class="uppercase font-bold text-lg md:text-xl text-center md:text-left text-[#FB6D25]">QUICK LINKS
+                </h2>
+                <ul class="flex flex-col items-center md:items-start gap-4 text-slate-200">
+                    <li><a href="/" class="text-[#FB6D25]">Home</a></li>
+                    <li><a href="/company-profile" class="hover:text-[#FB6D25]">Company Profile</a></li>
+                    <li><a href="/portfolio" class="hover:text-[#FB6D25]">Portfolio</a></li>
+                    <li><a href="/blog" class="hover:text-[#FB6D25]">Blog</a></li>
+                    <li><a href="/get-in-touch" class="hover:text-[#FB6D25]">Get In Touch</a></li>
+                </ul>
+            </section>
+
+            <!-- Services Section -->
+            <section class="flex flex-col gap-6 items-center md:items-start w-fit mx-auto">
+                <h2 class="uppercase font-bold text-lg md:text-xl text-center md:text-left text-[#FB6D25]">Services
+                </h2>
+                <ul class="flex flex-col items-center md:items-start gap-4 text-slate-200">
+                    <li><a href="/custom-stand" class="hover:text-[#FB6D25]">Custom Exhibition</a></li>
+                    <li><a href="/country-pavilion-stand" class="hover:text-[#FB6D25]">Country Pavilion Stand</a></li>
+                    <li><a href="/modular-bematrix-stand" class="hover:text-[#FB6D25]">Modular Exhibition Stands
+                            Design</a></li>
+                    <li><a href="/major-exhibiting-cities" class="hover:text-[#FB6D25]">Major Exhibition Cities</a></li>
+                    <li><a href="/rent-booth-by-size" class="hover:text-[#FB6D25]">Rent Booth By Size</a></li>
+                    <li><a href="/trade-show-calender" class="hover:text-[#FB6D25]">Trade Show Calendar</a></li>
+
+                </ul>
+            </section>
+
+            <!-- Our Apps Section -->
+            <section class="flex flex-col gap-6 items-center md:items-start w-fit mx-auto">
+                <h2 class="uppercase font-bold text-lg md:text-xl text-center md:text-left text-[#FB6D25]">Exhibiting
+                    Country
+                </h2>
+                <ul class="flex flex-col items-center md:items-start gap-4 text-slate-200">
+                    <li><a href="/stand-design-and-builder-company-in-germany" class="hover:text-[#FB6D25]">Germany</a>
+                    </li>
+                    <li><a href="/stand-design-company-in-netherlands" class="hover:text-[#FB6D25]">Netherlands</a></li>
+                    <li><a href="/exhibition-stand-builder-in-france" class="hover:text-[#FB6D25]">France</a></li>
+                    <li><a href="/exhibition-stand-builders-italy" class="hover:text-[#FB6D25]">Italy</a></li>
+                    <li><a href="/exhibition-stand-builder-spain" class="hover:text-[#FB6D25]">Spain</a></li>
+                    <li><a href="/exhibition-stand-builder-switzerland" class="hover:text-[#FB6D25]">Switzerland</a>
+                    </li>
+                </ul>
+            </section>
+        </div>
+
+        <!-- Bottom Section -->
+        <div class="border-t bg-zinc-900 border-zinc-500 py-2">
+            <div class="px-5 md:px-20 flex justify-between">
+                <span class="text-lg">
+                    Impressum | AGB
+                </span>
+                <span>
+                    © <span id="year"></span>
+                    <a href="/" target="_blank" rel="noopener noreferrer" class="text-[#FB6D25] hover:text-[#f68f4a]">
+                        Messe Masters UG
+                    </a>
+                </span>
+            </div>
+        </div>
+    </footer>
+    <script>
+
+        // Dynamically set the current year
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+    <!-- End Footer-Section -->
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
